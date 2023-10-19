@@ -1,11 +1,12 @@
+/* eslint-disable */
 import style from "./ProjectsCarrousel.module.css";
 import { Carrousel } from "./Carrousel";
 
-export const ProjectsCarrousel = () => {
+export const ProjectsCarrousel = ({ projects }) => {
 	return (
 		<div>
 			<div className={style.container}>
-				<Carrousel />
+				<Carrousel projects={projects} />
 			</div>
 		</div>
 	);

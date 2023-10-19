@@ -7,15 +7,17 @@
 
 /* global configuration */
 :root {
-  --bg-color: #000000;
-  --bg-color-off: #0A0A0A;
+  /* --bg-color: #000000;
+  --bg-color-off: #0A0A0A; */
+  --bg-color: #2a1931;
+  --bg-color-off: #2a1931;
   --text-primary-color: #ededed;
   --text-secondary-color: #9c9c9c;
   --font-family-base: "Plus Jakarta Sans", sans-serif;
   --font-size-base: 1.5625rem;
 --text-secondary-color:  white;
   
-  --border: #333;
+  --border: #0A0A0A;
   --border-off: #ededed;
 
   --pd-0: 16px 0;
