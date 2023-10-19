@@ -1,0 +1,67 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global configuration */
+:root {
+  --bg-color: #000000;
+  --bg-color-off: #0A0A0A;
+  --text-primary-color: #ededed;
+  --font-family-base: "Plus Jakarta Sans", sans-serif;
+  --font-size-base: 1.5625rem;
+--text-secondary-color:  white;
+  
+  --border: #333;
+  --border-off: #ededed;
+
+  --pd-0: 16px 0;
+  --pd-1: 32px 0;
+  --pd-2: 64px 0;
+
+  --fs-h1: clamp(var(--font-size-base), 0.2717rem + 5.163vw, 5rem);
+  --fs-h2: clamp(1.125rem, 2.625vw + 0.875rem, 1.625rem);
+  --fs-h3: clamp(1.0625rem, 2.625vw + 0.875rem, 1.2125rem);
+
+  --hover-primary: #ffff00;
+  --hover-secondary: #ededed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* General */
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--text-secondary-color);
+  background-color: var(--bg-color);
+}
+
+li {
+  list-style: none;
+  margin-right: 5px
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  font-weight: 600;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+    max-width: 1024px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,32 @@
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .title {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .contact ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact li {
+    padding: 5px 12px;
+  }
+
+  .contact svg {
+    color: var(--text-secondary-color);
+    height: 22px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .contact svg:hover {
+    color: var(--primary-color);
+  }

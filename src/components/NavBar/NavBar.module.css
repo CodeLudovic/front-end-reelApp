@@ -1,0 +1,120 @@
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    position: fixed;
+    background-color: var(--bg-color);
+    transition: box-shadow 0.1s ease 0s, background-color 0.1s ease 0s;
+    z-index: 99;
+  }
+  
+  .scrolled {
+    box-shadow: inset 0 -1px 0 0px var(--border);
+  }
+  
+  
+  .navContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbarLogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbarAssets {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbarLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    color: var(--text-secondary-color);
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  li {}
+
+  .navbarLinks li a:hover {
+    color: var(--hover-secondary);
+  }
+  
+  .navbarLinks.active {
+    height: 60%;
+    opacity: 1;
+    height: 100vh;
+  }
+  
+  .navbarLinks.active li {
+    padding: var(--pd-0);
+  }
+  
+  .navbarLinks.active li a {
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+  }
+  
+  .navbarToggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 38px;
+    width: 38px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .navbarToggle:hover {
+    color: var(--hover-secondary);
+  }
+  
+  .navbarToggle svg {
+    height: 36px;
+    width: 36px;
+  }
+  
+  .menuClose {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .menuOpen {
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbarLinks {
+      display: flex;
+      opacity: 1;
+      position: relative;
+    }
+  
+    .navbarLinks ul {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .navbarToggle {
+      display: none;
+    }
+  }
