@@ -6,7 +6,7 @@
     width: 100%;
   }
 
-  .logo {
+  /* .logo {
 
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -21,7 +21,7 @@
     max-width: 100% !important;
     height: auto !important;
     max-height: 60vh;
-  }
+  } */
 
   .__text_projects{
     display: flex;
@@ -54,4 +54,10 @@
     -o-transition: opacity .35s ease-in-out;
     transition: opacity .35s ease-in-out;
     z-index: 2;
+  }
+
+  @media screen and (max-width: 625px) {
+    .container{
+      min-height: 69vh
+    }
   }

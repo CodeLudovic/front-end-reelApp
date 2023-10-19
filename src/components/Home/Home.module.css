@@ -1,5 +1,5 @@
 .home {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,17 +16,24 @@
     display: flex;
     justify-content: center;
   }
-
+  
   .contact li {
     padding: 5px 12px;
   }
 
-  .contact svg {
-    color: var(--text-secondary-color);
-    height: 22px;
-    transition: all 0.2s ease-out;
-  }
-  
-  .contact svg:hover {
-    color: var(--primary-color);
+  @media screen and (max-width: 625px) {
+    .home{
+      height: 89vh;
+    }
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 17px;
+    }
+    
+    h3 {
+      font-size: 14px;
+    }
   }

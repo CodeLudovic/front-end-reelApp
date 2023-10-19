@@ -6,7 +6,11 @@ export const Carrousel = () => {
 	return (
 		<div id="projects" className={style.container}>
 			<h1 className={style.__text_projects}>Mis Projectos</h1>
-			<Carousel showThumbs={false} showStatus={true} animationHandler="fade">
+			<Carousel
+				showThumbs={false}
+				showStatus={true}
+				animationHandler="fade"
+				showIndicators={false}>
 				<div>
 					<img src={imgRick} />
 					<p className={style.legend_mine}>Legend</p>

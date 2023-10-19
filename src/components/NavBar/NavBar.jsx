@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import imgLogo from "../../assets/CodeLudovic.png";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-// import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
-// import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
 import style from "./Navbar.module.css";
 import styleApp from "../../App.module.css";
@@ -28,10 +26,26 @@ const Navbar = () => {
 
 	const scrollToSection = (sectionId) => {
 		const section = document.getElementById(sectionId);
-		if (section) {
-			const offset = section.offsetTop - 80;
+		if (section && sectionId === "projects") {
+			const offset = section.offsetTop - 70;
 			window.scrollTo({
 				top: offset,
+				behavior: "smooth",
+			});
+		} else if (section && sectionId === "about") {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		} else if (section && sectionId === "skills") {
+			const offset = section.offsetTop - 120;
+			window.scrollTo({
+				top: offset,
+				behavior: "smooth",
+			});
+		} else if (sectionId === "logo") {
+			window.scrollTo({
+				top: 0,
 				behavior: "smooth",
 			});
 		}
@@ -61,25 +75,29 @@ const Navbar = () => {
 		<nav className={`${scrolled ? style.scrolled : ""}`}>
 			<div className={styleApp.container + " " + style.navContainer}>
 				<div className={style.navbarLogo}>
-					<img src={imgLogo} />
+					<img
+						src={imgLogo}
+						width="200px"
+						onClick={() => scrollToSection("logo")}
+					/>
 				</div>
 				<div className={style.navbarAssets}>
 					<div className={`${style.navbarLinks} ${open ? style.active : ""}`}>
 						<div>
 							<ul>
 								<li>
-									<a name="projects" onClick={handleClick}>
-										Projects
-									</a>
-								</li>
-								<li>
 									<a name="about" onClick={handleClick}>
-										About
+										Acerca de
 									</a>
 								</li>
 								<li>
 									<a name="skills" onClick={handleClick}>
 										Skills
+									</a>
+								</li>
+								<li>
+									<a name="projects" onClick={handleClick}>
+										Projectos
 									</a>
 								</li>
 							</ul>
