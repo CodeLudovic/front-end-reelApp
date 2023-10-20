@@ -96,17 +96,17 @@ const Navbar = () => {
 								<li>
 									<button
 										className={style.outline_button}
-										name="skills"
+										name="projects"
 										onClick={handleClick}>
-										Skills
+										Projectos
 									</button>
 								</li>
 								<li>
 									<button
 										className={style.outline_button}
-										name="projects"
+										name="skills"
 										onClick={handleClick}>
-										Projectos
+										Skills
 									</button>
 								</li>
 							</ul>
