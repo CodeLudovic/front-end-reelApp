@@ -1,36 +1,29 @@
+/* eslint-disable */
+import { motion } from "framer-motion";
 import style from "./Home.module.css";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
-export const Home = () => {
+export const Home = ({ t }) => {
 	return (
-		<div className={style.home}>
+		<motion.div
+			animate={{ y: 20 }}
+			transition={{ type: "spring", stiffness: 50 }}
+			className={style.home}>
 			<div className={style.title}>
-				<h1>Acerca de mi: </h1>
+				<h1>{t("about_me")} </h1>
 			</div>
 			<br />
 			<h3 className={style.about} id="about">
-				Hola! soy Daniel Ospina, tambien me hago conocer como CodeLudovic, soy
-				Originario de Cali, Colombia. Mi pasión por los videojuegos, en especial
-				sagas como Final Fantasy y los juegos de rol, ha sido una constante en
-				mi vida. Mi viaje en el mundo del desarrollo me ha llevado a convertirme
-				en un FullStack Developer.
+				{t("aboutme_1")}
 				<br />
 				<br />
-				He adquirido conocimientos y experiencia en proyectos personales y
-				colaborativos, utilizando tecnologías y frameworks como JavaScript,
-				React.Js, Angular, Express, Redux, Node.Js, y más . También he explorado
-				el mundo de PHP, he incursionado en el framework Laravel en su versión 6
-				y he emprendido proyectos personales en el framework Ionic y TypeScript.
+				{t("aboutme_2")}
 				<br />
 				<br />
-				Mi vida consiste en un constante tira y afloja con las llaves del
-				teclado, donde mi cerebro es el DJ que mezcla HTML, CSS, JavaScript y
-				otros lenguajes. Pero, como todo héroe, también necesito un descanso, y
-				es ahí cuando me convierto en un Guerrero de la Luz en el reino de
-				Eorzea. 🗡️✨
+				{t("aboutme_3")} 🗡️✨
 			</h3>
 			<br />
-			<h4>Conectate conmigo en:</h4>
+			<h4>{t("connect")}</h4>
 			<br />
 			<div className={style.contact}>
 				<ul>
@@ -52,6 +45,6 @@ export const Home = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</motion.div>
 	);
 };

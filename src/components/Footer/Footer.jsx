@@ -1,9 +1,10 @@
+/* eslint-disable */
 import style from "./Footer.module.css";
-export const Footer = () => {
+export const Footer = ({ t }) => {
 	return (
 		<footer className={style.footer}>
-			Todos los derechos reservados, Codeludovic &copy;{" "}
-			{new Date().getFullYear()}
+			{t("copyright")}
+			{new Date().getFullYear()}.
 		</footer>
 	);
 };

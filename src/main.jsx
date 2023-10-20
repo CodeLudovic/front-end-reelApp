@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-// import store from "./redux/store.js";
-
+import "./config/i18next.config";
 import App from "./App";
 
 const root = createRoot(document.getElementById("root"));

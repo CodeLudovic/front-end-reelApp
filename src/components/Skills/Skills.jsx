@@ -58,11 +58,10 @@ export const Skills = () => {
 					<a href="https://angular.io" target="_blank" rel="noreferrer">
 						{" "}
 						<img
-							src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg"
-							alt="angularjs"
+							src="https://angular.io/assets/images/logos/angular/angular.svg"
+							alt="angular"
 							width="60"
 							height="60"
-							style={{ backgroundColor: "white" }}
 						/>{" "}
 					</a>
 					<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
