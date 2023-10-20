@@ -17,7 +17,8 @@
   .project_image {
     display: flex;
     height: 350px;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
   }
   
@@ -38,12 +39,21 @@
     top: 10px; /* Ajusta la distancia desde la parte superior */
     right: 10px; /* Ajusta la distancia desde la derecha */
     display: flex; /* Establece un contenedor flex para los iconos */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
   }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 520px) {
     /* .project_icon {
         left: 255px;
     } */
+    .project_image {
+      background-size: cover;
+    }
+
   }
