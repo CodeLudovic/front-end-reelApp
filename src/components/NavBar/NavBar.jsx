@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import imgLogo from "../../assets/CodeLudovic2.png";
+import imgLogo from "../../assets/Codeludovic2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 
