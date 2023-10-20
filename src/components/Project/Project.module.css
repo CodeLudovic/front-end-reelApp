@@ -1,0 +1,48 @@
+.project_card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
+    height: 350px;
+    width: 500px;
+    position: relative;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  .project_image {
+    display: flex;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .project_name {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute; /* Ajusta la posición absoluta para que esté en la parte inferior */
+    bottom: 0; /* Ajusta la distancia desde la parte inferior */
+    left: 0; /* Ajusta la distancia desde la izquierda */
+    right: 0; /* Ajusta la distancia desde la derecha */
+  }
+
+  .project_icon {
+    position: absolute; /* Ajusta la posición absoluta para superponer los iconos en la parte superior derecha */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Establece un contenedor flex para los iconos */
+  }
+
+
+@media screen and (max-width: 390px) {
+    /* .project_icon {
+        left: 255px;
+    } */
+  }

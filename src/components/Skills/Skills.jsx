@@ -3,8 +3,8 @@ export const Skills = () => {
 	return (
 		<>
 			<div id="skills" className={style.skills}>
-				<h1>Skills 💻🎯</h1>
-				<div>
+				<h1 style={{ marginBottom: "50px" }}>Skills 💻🎯</h1>
+				<div className={style.divIcons}>
 					<a
 						href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 						target="_blank"

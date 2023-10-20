@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import imgLogo from "../../assets/CodeLudovic.png";
+import imgLogo from "../../assets/CodeLudovic2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -27,7 +27,7 @@ const Navbar = () => {
 	const scrollToSection = (sectionId) => {
 		const section = document.getElementById(sectionId);
 		if (section && sectionId === "projects") {
-			const offset = section.offsetTop - 70;
+			const offset = section.offsetTop - 140;
 			window.scrollTo({
 				top: offset,
 				behavior: "smooth",
@@ -86,19 +86,28 @@ const Navbar = () => {
 						<div>
 							<ul>
 								<li>
-									<a name="about" onClick={handleClick}>
+									<button
+										className={style.outline_button}
+										name="about"
+										onClick={handleClick}>
 										Acerca de
-									</a>
+									</button>
 								</li>
 								<li>
-									<a name="skills" onClick={handleClick}>
+									<button
+										className={style.outline_button}
+										name="skills"
+										onClick={handleClick}>
 										Skills
-									</a>
+									</button>
 								</li>
 								<li>
-									<a name="projects" onClick={handleClick}>
+									<button
+										className={style.outline_button}
+										name="projects"
+										onClick={handleClick}>
 										Projectos
-									</a>
+									</button>
 								</li>
 							</ul>
 						</div>

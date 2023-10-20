@@ -1,9 +1,9 @@
-.container {
+.container_cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    gap: 20px;
   }
 
   /* .logo {
@@ -57,7 +57,7 @@
   }
 
   @media screen and (max-width: 625px) {
-    .container{
+    /* .container{
       min-height: 69vh
-    }
+    } */
   }
