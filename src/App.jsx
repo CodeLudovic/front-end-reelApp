@@ -11,7 +11,7 @@ function App() {
 
 	const handlerProj = async () => {
 		try {
-			const response = await axios("http://localhost:3001/projects");
+			const response = await axios("http://back-end-reelapp-production.up.railway.app/projects");
 			setProjects(response.data);
 		} catch (error) {
 			console.log(error);
