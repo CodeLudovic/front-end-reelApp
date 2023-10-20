@@ -21,8 +21,7 @@ const icons = [
 	},
 	{
 		name: "Angular",
-		urlPath:
-			"https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
+		urlPath: "https://angular.io/assets/images/logos/angular/angular.svg",
 	},
 	{
 		name: "Ionic",
@@ -46,7 +45,7 @@ const icons = [
 	},
 	{
 		name: "CSS",
-		urlPath: 
+		urlPath:
 			"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
 	},
 ];

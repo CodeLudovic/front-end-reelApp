@@ -38,6 +38,7 @@
     top: 10px; /* Ajusta la distancia desde la parte superior */
     right: 10px; /* Ajusta la distancia desde la derecha */
     display: flex; /* Establece un contenedor flex para los iconos */
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
 
