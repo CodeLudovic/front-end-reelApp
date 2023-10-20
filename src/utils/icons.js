@@ -45,7 +45,7 @@ const icons = [
 			"https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
 	},
 	{
-		name: "CSS"
+		name: "CSS",
 		urlPath: 
 			"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
 	},
