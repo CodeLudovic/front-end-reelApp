@@ -3,7 +3,7 @@ import imgLogo from "../../assets/Codeludovic2.png";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import style from "./Navbar.module.css";
+import style from "./NavBar.module.css";
 import styleApp from "../../App.module.css";
 
 const Navbar = () => {
