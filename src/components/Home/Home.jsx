@@ -32,7 +32,7 @@ export const Home = ({ t }) => {
 							href="https://www.linkedin.com/in/danielor92/"
 							target="_blank"
 							rel="noopener noreferrer">
-							<LinkedIn style={{ color: "blue", fontSize: "25px" }} />
+							<LinkedIn style={{ color: "#3b76ee", fontSize: "25px" }} />
 						</a>
 					</li>
 					<li>
